@@ -1,0 +1,382 @@
+/*---font-style---*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+/*-------------whole section (above-portion )------------*/
+/* for background */
+.above-portion{
+    height: 677px;
+    background-color: #2D25A0;
+   
+    
+}
+
+/*--------header--------*/
+
+header>nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 42px;
+   
+}
+.page-branches{
+    position: relative;
+    left: 156px;
+}
+ .page-branches a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding: 10px 24px;
+   
+    
+
+}
+.login  a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+    margin-right: 121px;
+  
+    
+}
+/* -----------article(for banner)---------- */
+
+.banner{
+    display: flex;  
+}
+
+.half-width{
+    width: 50%;
+}
+
+
+ 
+.caption .title{
+    font-size: 54px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    left: 156px;
+    top: 195px;
+    margin: 0px;
+    padding: 0px;
+    
+   
+}
+/* ------------transition(for grid) -----------*/
+
+.watch-live{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 156px;
+    top: 207px;
+    
+
+}
+
+.banner .photo{
+    position: relative;
+    top: 130px;
+    right: 20px;
+}
+.banner .photo img{
+   
+    width: 556px;
+    height: 438px;
+  
+    
+}
+
+/* ------------player-list -------------*/
+.container{
+  margin-top: 70px;
+  margin-bottom: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+    
+    
+}
+.player-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1.5em;
+}
+.player-list .player{
+    height: 474px;
+    width: 330px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+}
+.player .player-image{
+    width: 100%;
+}
+/* ----------3rd section -----------*/
+.highlights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    
+    
+    
+    
+}
+.highlights .playing-image{
+    width: 80%;
+  
+}
+.introdiction>h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    
+
+}
+ p{
+    color: gray;
+    font-size: 16px;
+    font-weight:300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.watch-now{
+   background-color: #E02C6D; 
+   color: white;
+   border-radius: 5px;
+   padding: 10px 24px;
+   text-decoration: none;
+}
+/* -----------animation-------- */
+.animation{
+    transition: transform .4s linear ;
+}
+.animation:hover{
+transform: scale(1.04);
+
+}
+/* --------copa-champion list-------- */
+.champion-list h1{
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 40px;
+
+    
+}
+.copa-champion{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    height: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.champion{
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color:#DF5E5E;
+   transition: transform 0.3s linear;
+}
+.year{
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+
+}
+.country{
+    display: none;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+  
+}
+.champion:hover{
+    transform: scale(1.03);
+}
+.champion:hover .country{
+    display: block;
+
+}
+.champion:hover .year{
+
+    display: none;
+
+}
+/*----------best-eleven by GET ------------ */
+.chosen-eleven{
+    margin: 100px;
+}
+.best-eleven{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.best-player{
+    height: 500px;
+    width: 100%;
+}
+.remark>p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*--------- footer ----------*/
+footer>article{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo{
+    height: 110px;
+    width: 484px;
+}
+.social-media img{
+    width: 32px;
+    height: 32px;
+    margin:15px;
+}
+footer p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*-------------- media queries------------ */
+@media only screen and (max-width:688px){
+.above-portion nav{
+    display: none;
+}
+
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.banner .caption .title,.watch-live{
+ position: static;
+ margin-left: 40px;
+
+}
+.banner .photo{
+    position: static;
+    
+}
+.banner .photo img{
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+}
+.player-list{
+    grid-template-columns: repeat(1,1fr);
+}
+.player-list .player{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.highlights{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+.highlights .half-width{
+    width: 100%;
+}
+.highlights .playing-image{
+    margin-top: 40px;
+}
+.champion-list h1{
+    margin-left: 50px;
+}
+.copa-champion{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.chosen-eleven{
+    margin-left: 50px;
+}
+.chosen-eleven .best-player{
+    width: 100%;
+    height: 50%;
+}
+footer{
+    width: 100%;
+}
+footer .logo{
+    width: 50%;
+    margin-left: 70px;
+    
+}
+}
+/*-------- tablet devices --------*/
+@media  only screen and (min-width:689px) and (max-width:1025px) {
+   
+.above-portion nav{
+     display: none;
+}
+.banner{
+    display: flex;
+    
+}   
+.banner .caption .title,.watch-live{
+    position: static;
+    margin-left: 40px;
+
+}
+.banner .photo{
+    position: static;
+
+}
+
+.banner .photo img{
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+}
+
+.player-list{
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+
+.highlights{
+    margin-left: 20px;
+    
+}
+
+.champion-list h1{
+    margin-left: 20px;
+}
+
+.chosen-eleven{
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+}
